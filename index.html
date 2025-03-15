@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Haven</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Background Video Styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    .nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .home-section {
+      text-align: center;
+      padding: 50px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .home-section img {
+      width: 250px;
+      border-radius: 10px;
+    }
+    .home-section h2 {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+    .home-section p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <video class="video-bg" autoplay muted loop>
+    <source src="8879540-uhd_2160_4096_25fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <div class="content">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">
+        <h1>Burger Haven</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a href="#order-now" class="btn">Order Now</a>
+      </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Burger Haven</h1>
+        <p>Your perfect burger is just a bite away. Made with love, grilled to perfection.</p>
+        <a href="#order-now" class="cta-btn">Order Now</a>
+      </div>
+    </section>
+    
+    <!-- Home Section with Burger Details -->
+    <section id="home" class="home-section">
+      <h2>Delicious Classic Burger</h2>
+      <img src="freepik__burger__18822.jpeg" alt="Classic Burger">
+      <p>Price: $5.99</p>
+    </section>
+  </div>
+</body>
+</html>
